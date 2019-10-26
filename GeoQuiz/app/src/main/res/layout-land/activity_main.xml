@@ -1,61 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/question_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:layout_gravity="center_horizontal"
         android:padding="24dp"
         android:text="@string/question_australia"
-        tools:text="@string/question_australia" />
+        tools:text="@string/question_australia"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_gravity="center_horizontal|center_vertical">
 
         <Button
             android:id="@+id/true_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/true_button"
-            tools:text="@string/true_button" />
+            tools:text="@string/true_button"/>
 
         <Button
             android:id="@+id/false_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/false_button"
-            tools:text="@string/false_button" />
+            tools:text="@string/false_button"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal">
 
 
         <ImageButton
             android:id="@+id/prev_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/left_arrow_description"
-            android:src="@drawable/ic_keyboard_arrow_left_black_24dp" />
+            android:layout_gravity="bottom|start"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+            android:contentDescription="@string/left_arrow_description"/>
 
         <ImageButton
             android:id="@+id/next_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/right_arrow_description"
-            android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:contentDescription="@string/right_arrow_description"/>
 
     </LinearLayout>
 
 
-</LinearLayout>
+</FrameLayout>
